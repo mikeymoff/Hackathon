@@ -237,3 +237,4 @@ Movie.create(
  description: 'http://www.imdb.com/title/tt0117802/',
  trailer: 'https://www.youtube.com/embed/nWCct8XbQD0'
 )
+
