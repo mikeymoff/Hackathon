@@ -1,3 +1,4 @@
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -17,13 +18,17 @@
 
 <p>
   <strong>Description:</strong>
-  <%= @movie.description %>
-</p>
+  <% @movie.description %>
+  <a href="<%= @movie.description %>" target="_blank"><%= @movie.title %></a>
 
 <p>
-  <strong>Trailer:</strong>
-  <%= @movie.trailer %>
+  <% @movie.trailer %>
+  <iframe src="<%= @movie.trailer %>" width="560" height="315">
+  </iframe>
+
 </p>
 
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
 <%= link_to 'Back', movies_path %>
+
+
